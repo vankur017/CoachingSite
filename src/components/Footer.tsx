@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About */}
           <div>
-            <h3 className="text-xl font-bold mb-4">EduSuccess</h3>
+            <h3 className="text-xl font-bold mb-4">Arise Instinute</h3>
             <p className="text-gray-400 mb-4">
               Empowering students to achieve academic excellence through quality education and personalized learning experiences.
             </p>
@@ -78,14 +78,14 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="mr-2 flex-shrink-0" />
-                <span className="text-gray-400">info@edusuccess.com</span>
+                <span className="text-gray-400">info@Arise Instinute.com</span>
               </li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} EduSuccess. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Arise Instinute. All rights reserved.</p>
         </div>
       </div>
     </footer>

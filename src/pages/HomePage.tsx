@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BookOpen, Award, Users, CheckCircle } from 'lucide-react';
+import Header from '../components/Header';
 
 const HomePage: React.FC = () => {
   return (
     <div>
-      {/* Hero Section */}
+      <Header />
       <section className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Achieve Academic Excellence with EduSuccess
+                Achieve Academic Excellence with Arise Institute
               </h1>
               <p className="text-xl mb-8">
                 Expert coaching for NEET, IIT-JEE, and school students from classes 8th to 12th (CBSE & ICSE).
@@ -46,7 +47,7 @@ const HomePage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose EduSuccess?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Arise Intitue?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We provide comprehensive education solutions designed to help students excel in their academic journey.
             </p>
@@ -214,7 +215,7 @@ const HomePage: React.FC = () => {
                 </div>
               </div>
               <p className="text-gray-600">
-                "The faculty at EduSuccess helped me understand complex concepts in Biology and Chemistry. Their guidance was crucial for my NEET preparation."
+                "The faculty at Arise Intitue helped me understand complex concepts in Biology and Chemistry. Their guidance was crucial for my NEET preparation."
               </p>
             </div>
 
@@ -231,7 +232,7 @@ const HomePage: React.FC = () => {
                 </div>
               </div>
               <p className="text-gray-600">
-                "The problem-solving techniques taught at EduSuccess were game-changers for my JEE preparation. The faculty is extremely supportive."
+                "The problem-solving techniques taught at Arise Intitue were game-changers for my JEE preparation. The faculty is extremely supportive."
               </p>
             </div>
 
@@ -260,7 +261,7 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Start Your Academic Journey?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Join EduSuccess today and take the first step towards achieving your academic goals.
+            Join Arise Intitue today and take the first step towards achieving your academic goals.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
