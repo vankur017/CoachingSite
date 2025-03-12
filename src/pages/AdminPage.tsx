@@ -5,6 +5,7 @@ import { Course } from "../types";
 const AdminPage: React.FC = () => {
   const [courses, setCourses] = useState<Course[]>([]);
   const [formData, setFormData] = useState({
+    id: "", // ID will be generated automatically
     title: "",
     description: "",
     category: "CBSE",
@@ -37,6 +38,11 @@ const AdminPage: React.FC = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // Generate unique ID
+  const generateID = () => {
+    return `id-${Date.now()}-${Math.floor(Math.random() * 10000)}`;
+  };
+
   // Handle form submission for add/update
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -46,15 +52,17 @@ const AdminPage: React.FC = () => {
         await axios.put(`http://localhost:3000/api/admin/courses/${editingCourseId}`, formData);
         alert("Course updated successfully!");
       } else {
-        // Add new course
-        await axios.post("http://localhost:3000/api/admin/courses", formData);
+        // Add new course with auto-generated ID
+        const newCourse = { ...formData, id: generateID() };
+        await axios.post("http://localhost:3000/api/admin/courses", newCourse);
         alert("New course added successfully!");
       }
       setEditingCourseId(null);
       setFormData({
+        id: "",
         title: "",
         description: "",
-        category: "",
+        category: "CBSE",
         grade: "",
         duration: "",
         startDate: "",
@@ -74,16 +82,7 @@ const AdminPage: React.FC = () => {
   const handleEdit = (course: Course) => {
     setEditingCourseId(course.id);
     setFormData({
-      title: course.title || "",
-      description: course.description || "",
-      category: course.category || "CBSE",
-      grade: course.grade ?? "",
-      duration: course.duration || "",
-      startDate: course.startDate || "",
-      fee: `${course.fee}` || "",
-      seats: `${course.seats}` || "",
-      availableSeats: `${course.availableSeats}` || "",
-      image: course.image || "",
+      ...course,
     });
   };
 
@@ -93,6 +92,7 @@ const AdminPage: React.FC = () => {
       
       {/* Course Form */}
       <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md mb-10">
+        <input type="text" value={formData.id} readOnly placeholder="Generated ID will appear here" className="w-full p-2 border rounded mb-2 bg-gray-100" />
         <input type="text" name="title" placeholder="Title" value={formData.title} onChange={handleChange} required className="w-full p-2 border rounded mb-2" />
         <textarea name="description" placeholder="Description" value={formData.description} onChange={handleChange} required className="w-full p-2 border rounded mb-2" />
         
@@ -102,7 +102,7 @@ const AdminPage: React.FC = () => {
           <option value="IIT">IIT</option>
           <option value="NEET">NEET</option>
         </select>
-        
+       
         <input type="text" name="grade" placeholder="Grade (optional)" value={formData.grade} onChange={handleChange} className="w-full p-2 border rounded mb-2" />
         <input type="text" name="duration" placeholder="Duration" value={formData.duration} onChange={handleChange} required className="w-full p-2 border rounded mb-2" />
         <input type="date" name="startDate" placeholder="Start Date" value={formData.startDate} onChange={handleChange} required className="w-full p-2 border rounded mb-2" />
