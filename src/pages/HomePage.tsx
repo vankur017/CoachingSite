@@ -25,6 +25,12 @@ const HomePage: React.FC = () => {
                   Explore Courses
                 </Link>
                 <Link
+                  to="/admin"
+                  className="px-6 py-3 bg-white text-indigo-600 font-semibold rounded-md hover:bg-gray-100 transition-colors"
+                >
+                  Add Course
+                </Link>
+                <Link
                   to="/contact"
                   className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-md hover:bg-white hover:text-indigo-600 transition-colors"
                 >
