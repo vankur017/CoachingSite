@@ -20,7 +20,7 @@ const CoursesPage: React.FC = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get("http://localhost:3000/api/courses");
+      const response = await axios.get("http://192.168.29.89:3000/api/courses");
       let coursesData: Course[] = response.data;
       // Client-side filtering based on URL parameters
       if (categoryFilter && categoryFilter !== "all") {
