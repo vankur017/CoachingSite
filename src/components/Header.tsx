@@ -9,7 +9,7 @@ const Header = () => {
           <ul className='flex space-x-5'>
           
                 <li>Home</li>
-                <li>About Us</li>
+           
                 <li>Contact Us</li>
           
           </ul>

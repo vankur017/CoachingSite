@@ -65,12 +65,18 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
         
         <div className="flex justify-between items-center">
           <span className="text-xl font-bold text-indigo-600">{formattedFee}</span>
-          <Link 
+          <a
+                  href="https://forms.gle/2C8PSmMNoyhezNnH8"
+                  className="px-6 py-3 bg-transparent border-2 bg-blue-500 font-semibold rounded-md  hover:text-white transition-colors"
+                >
+                  Contact Us
+          </a>
+          {/* <Link 
             to={`/courses/${id}`}
             className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors"
           >
             View Details
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
