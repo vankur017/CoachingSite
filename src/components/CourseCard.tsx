@@ -67,7 +67,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
           <span className="text-xl font-bold text-indigo-600">{formattedFee}</span>
           <a
                   href="https://forms.gle/2C8PSmMNoyhezNnH8"
-                  className="px-6 py-3 bg-transparent border-2 bg-blue-500 font-semibold rounded-md  hover:text-white transition-colors"
+                  className="px-6 py-3 bg-transparent border-2 bg-blue-500 font-semibold rounded-md  hover:text-indigo-600 transition-colors"
                 >
                   Contact Us
           </a>
