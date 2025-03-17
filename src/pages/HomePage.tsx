@@ -6,7 +6,7 @@ import Header from '../components/Header';
 const HomePage: React.FC = () => {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <section className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -217,7 +217,7 @@ const HomePage: React.FC = () => {
                 />
                 <div>
                   <h4 className="font-semibold">Priya Sharma</h4>
-                  <p className="text-sm text-gray-500">NEET 2024 - AIR 156</p>
+                  {/* <p className="text-sm text-gray-500">NEET 2024 - AIR 156</p> */}
                 </div>
               </div>
               <p className="text-gray-600">
@@ -234,7 +234,7 @@ const HomePage: React.FC = () => {
                 />
                 <div>
                   <h4 className="font-semibold">Rahul Verma</h4>
-                  <p className="text-sm text-gray-500">IIT-JEE 2024 - AIR 342</p>
+                  {/* <p className="text-sm text-gray-500">IIT-JEE 2024 - AIR 342</p> */}
                 </div>
               </div>
               <p className="text-gray-600">
@@ -251,7 +251,7 @@ const HomePage: React.FC = () => {
                 />
                 <div>
                   <h4 className="font-semibold">Ananya Patel</h4>
-                  <p className="text-sm text-gray-500">CBSE Class 12 - 98.6%</p>
+                  {/* <p className="text-sm text-gray-500">CBSE Class 12 - 98.6%</p> */}
                 </div>
               </div>
               <p className="text-gray-600">
@@ -276,12 +276,13 @@ const HomePage: React.FC = () => {
             >
               Browse Courses
             </Link>
-            <Link
-              to="/contact"
-              className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-md hover:bg-white hover:text-indigo-600 transition-colors"
-            >
-              Get in Touch
-            </Link>
+            
+               <a
+                  href="https://forms.gle/2C8PSmMNoyhezNnH8"
+                  className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-md hover:bg-white hover:text-indigo-600 transition-colors"
+                >
+                   Get in Touch
+                </a>
           </div>
         </div>
       </section>
