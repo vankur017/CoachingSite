@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { BookOpen, Award, Users, CheckCircle } from 'lucide-react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const HomePage: React.FC = () => {
   return (
@@ -286,6 +287,9 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
+      <div>
+        <Footer/>
+      </div>
     </div>
   );
 };

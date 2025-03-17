@@ -37,11 +37,15 @@ const Footer: React.FC = () => {
                 <Link to="/courses" className="text-gray-400 hover:text-white">Courses</Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-400 hover:text-white">Contact Us</Link>
+                <a
+                  className="text-gray-400 hover:text-white"
+                  href="https://forms.gle/2C8PSmMNoyhezNnH8"
+                 
+                >
+                   Get in Touch
+                </a>
               </li>
-              <li>
-                <Link to="/login" className="text-gray-400 hover:text-white">Login</Link>
-              </li>
+              
             </ul>
           </div>
           
@@ -70,15 +74,15 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 flex-shrink-0" />
-                <span className="text-gray-400">123 Education Street, Knowledge City, 123456</span>
+                <span className="text-gray-400">Infront of Sainath Hospital, Bargad Chauraha, Raebareli</span>
               </li>
               <li className="flex items-center">
                 <Phone size={18} className="mr-2 flex-shrink-0" />
-                <span className="text-gray-400">+91 98765 43210</span>
+                <span className="text-gray-400">For any queries call :- 8840865599</span>
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="mr-2 flex-shrink-0" />
-                <span className="text-gray-400">info@Arise Instinute.com</span>
+                <span className="text-gray-400">ariseinstitute.rbl@gmail.com</span>
               </li>
             </ul>
           </div>
