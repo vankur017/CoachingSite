@@ -35,7 +35,7 @@ const AdminPage: React.FC = () => {
   // Fetch existing courses from backend
   const fetchCourses = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/courses");
+      const response = await axios.get("https://edtechbackend-qtbw.onrender.com/api/courses");
       setCourses(response.data);
     } catch (error) {
       console.error("Error fetching courses", error);
@@ -64,11 +64,11 @@ const AdminPage: React.FC = () => {
     try {
       if (editingCourseId) {
         const { courseId, ...updatedData } = formData; // ✅ Remove courseId before sending
-        await axios.put(`http://localhost:3000/api/admin/courses/${editingCourseId}`, updatedData);
+        await axios.put(`https://edtechbackend-qtbw.onrender.com/api/admin/courses/${editingCourseId}`, updatedData);
         alert("Course updated successfully!");
       } else {
         const newCourse = { ...formData, courseId: generateID() }; // ✅ Use courseId instead of id
-        await axios.post("http://localhost:3000/api/admin/courses", newCourse);
+        await axios.post("https://edtechbackend-qtbw.onrender.com/api/admin/courses", newCourse);
         alert("New course added successfully!");
       }
       setEditingCourseId(null);
