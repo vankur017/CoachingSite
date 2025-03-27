@@ -54,7 +54,7 @@ const HomePage: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Arise Intitue?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Arise Institute?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We provide comprehensive education solutions designed to help students excel in their academic journey.
             </p>
@@ -222,7 +222,7 @@ const HomePage: React.FC = () => {
                 </div>
               </div>
               <p className="text-gray-600">
-                "The faculty at Arise Intitue helped me understand complex concepts in Biology and Chemistry. Their guidance was crucial for my NEET preparation."
+                "The faculty at Arise Institute helped me understand complex concepts in Biology and Chemistry. Their guidance was crucial for my NEET preparation."
               </p>
             </div>
 
@@ -239,7 +239,7 @@ const HomePage: React.FC = () => {
                 </div>
               </div>
               <p className="text-gray-600">
-                "The problem-solving techniques taught at Arise Intitue were game-changers for my JEE preparation. The faculty is extremely supportive."
+                "The problem-solving techniques taught at Arise Institute were game-changers for my JEE preparation. The faculty is extremely supportive."
               </p>
             </div>
 
@@ -268,7 +268,7 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Start Your Academic Journey?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Join Arise Intitue today and take the first step towards achieving your academic goals.
+            Join Arise Institute today and take the first step towards achieving your academic goals.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
